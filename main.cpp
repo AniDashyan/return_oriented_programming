@@ -145,13 +145,6 @@ int main() {
     show_gadget_discovery();
     setup_rop_chain(&cpu);
     execute_rop(&cpu);
-    
-    std::cout << "=== Key Points ===\n";
-    std::cout << "1. No new code injected - reuses existing instructions\n";
-    std::cout << "2. Each gadget ends with RET to chain to next\n";
-    std::cout << "3. Stack controls execution flow through return addresses\n";
-    std::cout << "4. Bypasses DEP since all code is from executable sections\n";
-    std::cout << "5. Complex operations built from simple gadget chains\n";
-    
+        
     return 0;
 }
