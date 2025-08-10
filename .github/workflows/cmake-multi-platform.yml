@@ -16,8 +16,6 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         build_type: [Release]
         cpp_compiler: [g++, clang++, cl]
-        enable_security: [ON, OFF]
-
         include:
           - os: ubuntu-latest
             c_compiler: gcc
